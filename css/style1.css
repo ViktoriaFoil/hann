@@ -1,0 +1,202 @@
+html {
+    overflow-x: hidden;
+}
+body{
+    background-color: #DDFABA  ;
+    background-image: url('../img/fon.jpg') !important;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center; 
+    background-size: cover; 
+	max-width: 100%;
+	width: 100%;
+	font-family: ModBolda_Alterna !important;  
+}
+/* Подключение шрифтов */
+@font-face {
+    font-family:  src: url(19057.ttf); 
+    font-family:  src: url(ModBolda_Alterna.ttf);
+}
+a{
+    text-decoration: none !important; 
+}
+h2{
+    font-family: ModBolda_Alterna;
+    font-weight: thin;
+    font-size: 30px;
+    text-align: center; 
+    padding-bottom: 1em;
+    padding-top: 1em;
+    color: dimgray;
+}
+/* Центрирование меню */
+.navbar-center-menu {
+    width: 100%;
+    height: 100%;
+} 
+/* Кнопки меню navbar */
+.header_item {
+    font-size: 14pt;
+    text-transform: uppercase;
+    color: #494949;
+}
+.header_item:hover {
+    border-bottom: 2px solid #85bb43;
+    margin-bottom: -2px;
+}
+.header_item a {
+    color: #494949;
+}
+.header_item a:hover {
+    color: #85bb43;
+    transition: 1s;
+}
+/* Кнопка звонка на navbar */
+.header_button {
+    outline: none;
+    display: inline-block;
+    padding: 12px 50px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid black;
+    border-radius: 8px;
+    /* font-family: 'Montserrat', sans-serif; */
+    color: indianred;
+    border-color: darkgray;
+    font-weight: bold;
+    transition: .2s ease-in-out;
+     font-size: 13pt;
+}
+
+.header_button:before {
+    content: "";
+    background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .5));
+    /* TODO сделать не в пикселях */
+    height: 50px;
+    /* TODO сделать не в пикселях */
+    width: 50px;
+    position: absolute;
+    top: 0;
+    /* TODO сделать не в пикселях */
+    left: -75px;
+    transform: skewX(-45deg);
+}
+
+.header_button:hover {
+    background: #85BB43;
+    color: #fff;
+}
+
+.header_button:hover:before {
+    left: 75%;
+    transition: .5s ease-in-out;
+}
+/*-----FOOTER-------*/
+footer {
+    background-color: #101010;
+    padding-top: 20px;
+    color: #949494;
+    font-size: 18px;
+}
+footer h3 {
+    font-size: 16pt;
+    font-weight: bold;
+    margin: 0; 
+}
+footer span {
+    font-size: 13pt;
+}
+footer a {
+    color: #949494;
+}
+footer a:hover {
+    cursor: pointer;
+    color: #94d249;
+    -webkit-transition: color .1s ease;
+    transition: color .1s ease;
+}
+.li-none ul {
+    padding: 0;
+}
+.li-none li {
+    list-style-type: none
+}
+.line {
+    height: 160px;
+    border-left: 2px solid #716557;
+    width: 2px;
+    margin: auto;
+}
+.footer-contact div, .footer-menu div, .footer-category div {
+    display: inline-block;
+    
+}
+@media (max-width: 992px) {
+    .footer-line{
+        width: 0;
+        height: 0;
+    }
+    .line{
+        height: 0;
+        width: 0;
+        margin: 0;
+        border-left: none;
+    }
+    .footer-menu, .footer-category {
+        text-align: center !important;
+    }
+}
+
+/* Блоки */
+.box-list{
+	background-color: none;
+	height: auto;
+	width: 60.2em;
+	margin-bottom: 2em;
+	margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;  
+}
+.box-block{
+	display: inline-block;
+	justify-content: space-between;
+	width: 18rem;
+	height: auto;
+	margin:0 0.6em;
+	border-radius: 3px;
+	background-color: #C7E5A3;
+	color: #494949;
+	margin-bottom: 2em;
+	margin-top: 2em !important;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.box-img{
+	height: 12em;
+	width: 100%;
+	border-radius: 3px 3px 0 0;
+}
+.box-title{
+	font-size: 18px;
+    font-weight: bolder;
+    
+}
+.box-text{
+	font-size: 15px;
+}
+details{
+	margin-bottom: 1em;
+}
+summary{
+	padding: 20px;
+	font-size: 21px;
+	background-color: #C7E5A3;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	cursor: pointer;
+}
+hr{
+	background-color: #C7E5A3;
+	border: 2px solid #C7E5A3;
+}
+details summary::-webkit-details-marker {
+  display: none
+}

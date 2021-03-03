@@ -1,0 +1,435 @@
+html {
+    overflow-x: hidden;
+}
+
+
+body{
+	background: linear-gradient(0.07deg, #FCFEAB -1.62%, rgba(255, 222, 49, 0) 94.18%);
+	max-width: 100%;
+	width: 100%;
+	font-family: ModBolda_Alterna !important;  
+}
+
+.navbar-center-menu {
+    width: 100%;
+    height: 100%;
+}
+a{
+    text-decoration: none !important; 
+}
+h1{
+  color: darkslategrey;  
+}
+h5{
+  color: darkslategrey;  
+}
+h2{
+  color: darkslategrey;  
+}
+
+
+/* Кнопки меню navbar */
+
+.header_item {
+    font-size: 14pt;
+    text-transform: uppercase;
+    color: #494949;
+    
+}
+.header_item:hover {
+    border-bottom: 2px solid #85bb43;
+    margin-bottom: -2px;
+}
+.header_item a {
+    color: #494949;
+}
+.header_item a:hover {
+    color: #85bb43;
+    transition: 1s;
+}
+/* Кнопка звонка на navbar */
+.header_button {
+    outline: none;
+    display: inline-block;
+    padding: 12px 50px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid black;
+    border-radius: 8px;
+    /* font-family: 'Montserrat', sans-serif; */
+    color: indianred;
+    border-color: darkgray;
+    font-weight: bold;
+    transition: .2s ease-in-out;
+    font-size: 13pt;
+    
+    
+}
+
+.header_button:before {
+    content: "";
+    background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .5));
+    /* TODO сделать не в пикселях */
+    height: 50px;
+    /* TODO сделать не в пикселях */
+    width: 50px;
+    position: absolute;
+    top: 0;
+    /* TODO сделать не в пикселях */
+    left: -75px;
+    transform: skewX(-45deg);
+}
+
+.header_button:hover {
+    background: #85BB43;
+    color: #fff;
+}
+
+.header_button:hover:before {
+    left: 75%;
+    transition: .5s ease-in-out;
+}
+
+
+/* OTHER */
+
+.block-topic {
+    text-transform: uppercase;
+}
+
+.container-custom-service {
+    max-width: 80%;
+    margin: auto;
+}
+
+
+/* PRODUCT */
+
+.product-block {
+    padding-top: 5em;
+    padding-bottom: 15em;
+    width: 100%;
+    background-image: url('../img/product-fon2.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    /* background-position: 160% 50%; */
+    background-size: auto auto;
+}
+
+.product-fon {
+    margin-left: 50%;
+    /* position: absolute; */
+    width: 70em;
+    right: -20%;
+    /* -o-object-fit: fill; */
+    object-fit: cover;
+    /* position: absolute; */
+    /* top: 340px; */
+    opacity: 0.9;
+    /* width: 1200px; */
+    /* height: 650px; */
+    z-index: -1;
+}
+
+
+/* .btn-product {
+    font-size: 1.5rem !important;
+    font-weight: bold;
+} */
+
+.btn-product {
+    color: white;
+    background: #228B22;
+    /* фон блока */
+    -moz-border-radius: 10px;
+    /* закругление для старых Mozilla Firefox */
+    -webkit-border-radius: 10px;
+    /* закругл. для старых Chrome и Safari */
+    -khtml-border-radius: 10px;
+    /* закругл. для браузера Konquerer системы Linux */
+    border-radius: 10px;
+    /* закругление углов для всех, кто понимает */
+    padding: 10px;
+    /* внутренние отступы */
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 50px;
+}
+
+.btn-product:hover {
+    text-shadow: 0 15px 20px rgba(0, 0, 0, 0.55);
+    color: #fff;
+    background: #44cb49;
+    tansition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    text-decoration: none;
+}
+
+/* Портфолио */
+
+.portfolio-wrap {
+    max-width: 1120px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    padding: 13px;
+}
+
+.portfolio-item a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.portfolio-item-wrap {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+    background: black;
+    color: white;
+}
+
+.portfolio-item img {
+    display: block;
+    width: 100%;
+    opacity: .75;
+    transition: .5s ease-in-out;
+}
+
+.portfolio-item-inner {
+    position: absolute;
+    top: 45%;
+    left: 7%;
+    right: 7%;
+    bottom: 45%;
+    border-width: 0 1px 1px;
+    transition: .4s ease-in-out;
+}
+
+.portfolio-heading {
+    overflow: hidden;
+    transform: translateY(-10%);
+}
+
+.portfolio-heading h3 {
+    font-size: 20px;
+    font-weight: 900;
+    display: table;
+    margin: 0 auto;
+    padding: 0 10px;
+    position: relative;
+    
+    
+}
+
+.portfolio-heading h3:before,
+.portfolio-heading h3:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    background: white;
+}
+
+.portfolio-heading h3:before {
+    left: -50px;
+}
+
+.portfolio-heading h3:after {
+    right: -50px;
+}
+
+.portfolio-item-inner ul {
+    font-size: 13pt;
+    position: absolute;
+    top: 7em;
+    width: 100%;
+    transform: translateY(-50%);
+    padding: 0 20px;
+    opacity: 0;
+    list-style: none;
+    transition: .4s ease-in-out;
+}
+
+.portfolio-item:hover img {
+    opacity: 0.45;
+    transform: scale(1.1);
+}
+
+.portfolio-item:hover .portfolio-item-inner {
+    top: 7%;
+    bottom: 7%;
+}
+
+.portfolio-item:hover ul {
+    opacity: 1;
+    transition-delay: .4s;
+}
+
+/* Блок Немного о нас */
+
+.about-block {
+    padding: 30px;
+    background-color: white;
+ 
+    
+}
+
+.about-topic {
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    
+}
+
+.about-info {
+    padding: 90px;
+    font-size: 23px;
+    background-image: url(img/favicon.png) no-repeat 100%;
+    background-color: white;
+    line-height: 160%;
+}
+
+.about-why {
+    background-color: #FDBF0E;
+    padding: 30px;
+    color: white;
+    line-height: 26px;
+    font-size: 21px;
+    border-radius: 2px;
+    
+    
+}
+
+.about-why li {
+    list-style-type: none;
+    text-align: center;
+    padding-right: 35px;
+    border-bottom: 1px solid white;
+    border-bottom-right-radius: 35px;
+    margin-top: 1.5em;
+
+
+}
+
+
+.head-why {
+    color: #4F4943;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-align: center;
+}
+
+/*-----CONTACT-------*/
+
+.contact-block {
+    font-size: 20px;
+}
+
+.contact-topic {
+    text-align: center;
+    border-bottom: 2px solid #4F4943;
+    padding: 40px;
+}
+
+.contact-text {
+    color: #232D33;
+    padding: 20px;
+    text-align: center;
+    font-size: 16pt;
+}
+
+.contact-text span {}
+
+.contact-map h3,
+.contact-text h3 {
+    color: #373835;
+    margin-bottom: 20px;
+}
+
+.contact-map {
+    text-align: center;
+    padding: 10px;
+}
+
+.c {
+    padding-right: 10px;
+}
+
+.kar {
+    width: 100%;
+    height: 430px;
+}
+
+/*-----END CONTACT-------*/
+
+/*-----FOOTER-------*/
+
+footer {
+    background-color: #101010;
+    padding-top:20px;
+    color: #949494;
+    font-size: 18px;
+    
+}
+footer h3 {
+    font-size: 16pt;
+    font-weight: bold;
+    margin: 0;
+}
+footer span {
+    font-size: 13pt;
+}
+footer a {
+    color: #949494;
+}
+footer a:hover {
+    cursor: pointer;
+    color: #94d249;
+    -webkit-transition: color .1s ease;
+    transition: color .1s ease;
+}
+
+.li-none ul {
+    padding: 0;
+}
+
+.li-none li {
+    list-style-type: none;
+}
+
+.line {
+    height: 160px;
+    border-left: 2px solid #716557;
+    width: 2px;
+    margin: auto;
+}
+
+.footer-contact div, .footer-menu div {
+    display: inline-block;
+}
+
+@media (max-width: 992px) {
+    .footer-line{
+        width: 0;
+        height: 0;
+    }
+
+    .line{
+        height: 0;
+        width: 0;
+        margin: 0;
+        border-left: none;
+    }
+
+    .footer-menu, .footer-category {
+        text-align: center !important;
+    }
+}
